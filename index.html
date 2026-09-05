@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gestion des catégories</title>
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Gestion des catégories</h1>
+    <input
+      type="text"
+      id="recherche"
+      placeholder="Tu cherches quel objet ?"
+      style="width: 100%; margin-bottom: 20px; padding: 10px"
+    />
+    <div>
+      <input type="text" id="categorie" placeholder="Nom de l'endroit" />
+      <input type="text" id="objet" placeholder="Nom de l'objet" />
+      <select id="importance">
+        <option value="rouge">Très important</option>
+        <option value="jaune">Moyennement important</option>
+        <option value="vert">Pas très important</option>
+      </select>
+      <button id="btnAjouter">Ajouter</button>
+    </div>
+
+    <div id="liste-categories"></div>
+
+    <script src="file.js"></script>
+  </body>
+</html>
